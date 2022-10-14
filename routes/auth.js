@@ -2,7 +2,7 @@ import express from "express";
 const route = express.Router();
 import { User } from "../models/user.js";
 import joi from "joi";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 route.post("/", async (req, res) => {
   try {
